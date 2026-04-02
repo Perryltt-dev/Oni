@@ -10,7 +10,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.7s ease-out; }
         .fade-in.visible { opacity: 1; transform: translateY(0); }
         .hero-image-container {
@@ -23,8 +23,17 @@
     <!-- Navbar -->
     <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <div class="text-2xl font-black tracking-tighter text-slate-900">
-                ONI<span class="text-red-600">.</span>
+            <div class="flex items-center gap-8">
+                <div class="text-2xl font-black tracking-tighter text-slate-900">
+                    ONI<span class="text-red-600">.</span>
+                </div>
+                <!-- New Navigation Tabs -->
+                <div class="hidden md:flex items-center gap-6 text-sm font-bold text-slate-500">
+                    <a href="#menu" class="hover:text-red-600 transition-colors">Menu</a>
+                    <a href="#about" class="hover:text-red-600 transition-colors">About</a>
+                    <a href="#locations" class="hover:text-red-600 transition-colors">Locations</a>
+                    <a href="#contact" class="hover:text-red-600 transition-colors">Contact</a>
+                </div>
             </div>
             <a href="#locations" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-full font-semibold text-sm transition-all active:scale-95">
                 Find a Machine
@@ -61,8 +70,8 @@
         </div>
         <div class="flex-1 w-full fade-in">
             <div class="hero-image-container relative rounded-3xl overflow-hidden aspect-square bg-slate-100 border border-slate-200 shadow-2xl">
-                <!-- UPDATED: Now matches the file extension (.png) seen in your GitHub screenshot -->
-                <img src="THE ULTIMATE MEAL ON THE GO (1).png" 
+                <!-- Image source matching your GitHub exactly -->
+                <img src="THE%20ULTIMATE%20MEAL%20ON%20THE%20GO%20(1).png" 
                      alt="The Ultimate Meal On The Go" 
                      class="w-full h-full object-cover"
                      onerror="this.src='https://images.unsplash.com/photo-1615362868051-1cb34898396e?auto=format&fit=crop&q=80&w=1000'">
@@ -83,67 +92,82 @@
         </div>
     </header>
 
-    <!-- Features -->
-    <section class="py-24 px-6 max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 fade-in text-center md:text-left">
-            <div class="bg-red-50 w-12 h-12 rounded-xl flex items-center justify-center text-red-600 mb-6 mx-auto md:mx-0"><i data-lucide="zap"></i></div>
-            <h3 class="text-xl font-bold mb-2">Instant</h3>
-            <p class="text-slate-600 font-medium">Ready in under 45 seconds. Tap, grab, and go with our contactless payment system.</p>
+    <!-- Menu Section (New Tab) -->
+    <section id="menu" class="py-24 px-6 max-w-6xl mx-auto scroll-mt-20">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-4xl font-black mb-4">Our Classics</h2>
+            <p class="text-slate-500">Freshly made every 24 hours. No preservatives, just flavor.</p>
         </div>
-        <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 fade-in text-center md:text-left" style="transition-delay: 0.1s">
-            <div class="bg-green-50 w-12 h-12 rounded-xl flex items-center justify-center text-green-600 mb-6 mx-auto md:mx-0"><i data-lucide="leaf"></i></div>
-            <h3 class="text-xl font-bold mb-2">Fresh Daily</h3>
-            <p class="text-slate-600 font-medium">Stocked every morning with premium Koshihikari rice and hand-picked ingredients.</p>
-        </div>
-        <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 fade-in text-center md:text-left" style="transition-delay: 0.2s">
-            <div class="bg-blue-50 w-12 h-12 rounded-xl flex items-center justify-center text-blue-600 mb-6 mx-auto md:mx-0"><i data-lucide="shield-check"></i></div>
-            <h3 class="text-xl font-bold mb-2">Smart Pack</h3>
-            <p class="text-slate-600 font-medium">Patented moisture-lock film keeps the nori crisp and the rice soft until the first bite.</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm text-center fade-in">
+                <div class="text-4xl mb-4">🍣</div>
+                <h4 class="font-bold">Spicy Tuna</h4>
+                <p class="text-xs text-slate-500 mt-2">Bestseller</p>
+            </div>
+            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm text-center fade-in" style="transition-delay: 0.1s">
+                <div class="text-4xl mb-4">🐟</div>
+                <h4 class="font-bold">Grilled Salmon</h4>
+                <p class="text-xs text-slate-500 mt-2">High Protein</p>
+            </div>
+            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm text-center fade-in" style="transition-delay: 0.2s">
+                <div class="text-4xl mb-4">🍗</div>
+                <h4 class="font-bold">Chicken Teriyaki</h4>
+                <p class="text-xs text-slate-500 mt-2">Kid's Choice</p>
+            </div>
+            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm text-center fade-in" style="transition-delay: 0.3s">
+                <div class="text-4xl mb-4">🥬</div>
+                <h4 class="font-bold">Pickled Plum</h4>
+                <p class="text-xs text-slate-500 mt-2">Vegan</p>
+            </div>
         </div>
     </section>
 
-    <!-- Location Section -->
-    <section id="locations" class="bg-slate-900 text-white py-24 px-6">
-        <div class="max-w-6xl mx-auto text-center md:text-left flex flex-col md:flex-row items-center gap-12">
+    <!-- About Section (New Tab) -->
+    <section id="about" class="py-24 px-6 bg-white scroll-mt-20">
+        <div class="max-w-4xl mx-auto text-center fade-in">
+            <span class="bg-red-50 text-red-600 px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase">Our Story</span>
+            <h2 class="text-4xl font-black mt-6 mb-8 italic">"Vending machines shouldn't mean compromise."</h2>
+            <p class="text-lg text-slate-600 leading-relaxed">
+                Oni was founded by a team of busy commuters who were tired of choosing between a 30-minute line or a bag of chips. We combined traditional Japanese recipes with modern automated logistics to bring you real, nutritious meals in under a minute.
+            </p>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="bg-slate-900 text-white py-24 px-6 scroll-mt-20">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
             <div class="flex-1 fade-in">
                 <h2 class="text-4xl md:text-6xl font-black mb-6">On your route.</h2>
-                <p class="text-slate-400 text-lg mb-8">Strategically placed in Tokyo, London, and NYC's busiest transit hubs. We're where you are.</p>
-                <div class="space-y-4 max-w-md mx-auto md:mx-0">
-                    <div class="p-4 bg-slate-800/50 rounded-2xl flex justify-between items-center border border-slate-700 hover:bg-slate-800 transition-colors cursor-pointer group">
-                        <div class="flex items-center gap-3">
-                            <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                            <span class="group-hover:text-red-400 transition-colors">Central Station - Platform 4</span>
-                        </div>
+                <p class="text-slate-400 text-lg mb-8">Strategically placed in Tokyo, London, and NYC's busiest transit hubs.</p>
+                <div class="space-y-4">
+                    <div class="p-4 bg-slate-800/50 rounded-2xl flex justify-between items-center border border-slate-700">
+                        <span>Central Station - Platform 4</span>
                         <span class="text-red-400 font-bold">0.1 mi</span>
                     </div>
-                    <div class="p-4 bg-slate-800/50 rounded-2xl flex justify-between items-center border border-slate-700 hover:bg-slate-800 transition-colors cursor-pointer group">
-                        <div class="flex items-center gap-3">
-                            <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                            <span class="group-hover:text-red-400 transition-colors">Metro North - Exit A</span>
-                        </div>
+                    <div class="p-4 bg-slate-800/50 rounded-2xl flex justify-between items-center border border-slate-700">
+                        <span>Metro North - Exit A</span>
                         <span class="text-red-400 font-bold">0.4 mi</span>
                     </div>
                 </div>
             </div>
-            
-            <div class="flex-1 w-full relative group fade-in">
-                <div class="relative rounded-3xl overflow-hidden aspect-video md:aspect-square shadow-2xl border border-slate-700">
-                    <img src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?auto=format&fit=crop&q=80&w=1200" alt="Map View" class="w-full h-full object-cover grayscale brightness-75 opacity-90 group-hover:grayscale-0 group-hover:brightness-100 group-hover:opacity-100 transition-all duration-700">
-                    <div class="absolute inset-0 bg-red-600/5 pointer-events-none"></div>
-                    
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-                        <div class="relative">
-                            <div class="absolute inset-0 w-8 h-8 bg-red-600 rounded-full animate-ping opacity-75"></div>
-                            <div class="relative bg-red-600 p-3 rounded-full shadow-[0_0_20px_rgba(220,38,38,0.5)]">
-                                <i data-lucide="map-pin" class="text-white w-6 h-6"></i>
-                            </div>
-                        </div>
-                        <div class="mt-4 bg-slate-900/95 backdrop-blur-sm border border-slate-700 px-4 py-2 rounded-xl text-xs font-bold shadow-2xl whitespace-nowrap">
-                            <span class="text-red-400">Oni Machine #014</span> • Station Plaza
-                        </div>
-                    </div>
+            <div class="flex-1 w-full fade-in">
+                <div class="rounded-3xl overflow-hidden aspect-video bg-slate-800 border border-slate-700 flex items-center justify-center">
+                    <p class="text-slate-500 text-sm flex items-center gap-2"><i data-lucide="map"></i> Map Loading...</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (New Tab) -->
+    <section id="contact" class="py-24 px-6 max-w-6xl mx-auto scroll-mt-20">
+        <div class="bg-red-600 rounded-[3rem] p-12 text-white flex flex-col md:flex-row justify-between items-center gap-8 fade-in">
+            <div class="text-center md:text-left">
+                <h2 class="text-4xl font-black mb-2">Want Oni in your office?</h2>
+                <p class="text-red-100">Drop us a line and we'll see if we can install a machine near you.</p>
+            </div>
+            <a href="mailto:hello@oni.com" class="bg-white text-red-600 px-8 py-4 rounded-full font-black hover:bg-slate-100 transition-all">
+                Contact Us
+            </a>
         </div>
     </section>
 
