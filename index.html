@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oni | Real Meals. No Waiting.</title>
+    <title>Oni | LA's Mobile Onigiri Hubs</title>
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons -->
@@ -27,16 +27,15 @@
                 <div class="text-2xl font-black tracking-tighter text-slate-900">
                     ONI<span class="text-red-600">.</span>
                 </div>
-                <!-- New Navigation Tabs -->
                 <div class="hidden md:flex items-center gap-6 text-sm font-bold text-slate-500">
-                    <a href="#menu" class="hover:text-red-600 transition-colors">Menu</a>
-                    <a href="#about" class="hover:text-red-600 transition-colors">About</a>
-                    <a href="#locations" class="hover:text-red-600 transition-colors">Locations</a>
+                    <a href="#menu" class="hover:text-red-600 transition-colors">The Menu</a>
+                    <a href="#about" class="hover:text-red-600 transition-colors">Our Hubs</a>
+                    <a href="#locations" class="hover:text-red-600 transition-colors">Live Map</a>
                     <a href="#contact" class="hover:text-red-600 transition-colors">Contact</a>
                 </div>
             </div>
             <a href="#locations" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-full font-semibold text-sm transition-all active:scale-95">
-                Find a Machine
+                Track a Hub
             </a>
         </div>
     </nav>
@@ -45,45 +44,36 @@
     <header class="relative pt-32 pb-16 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         <div class="flex-1 text-center md:text-left fade-in">
             <p class="text-red-600 font-semibold tracking-wide uppercase text-sm mb-3 flex items-center justify-center md:justify-start gap-2">
-                <i data-lucide="clock" class="w-4 h-4"></i> Running late?
+                <i data-lucide="truck" class="w-4 h-4"></i> Mobile Hubs Moving Across LA
             </p>
             <h1 class="text-5xl md:text-7xl font-black tracking-tight leading-[1.05] mb-6">
                 Real Meals. <br class="hidden md:block">
-                <span class="text-slate-400">No Waiting.</span>
+                <span class="text-slate-400">Wherever You Are.</span>
             </h1>
             <p class="text-lg text-slate-600 mb-8 max-w-lg mx-auto md:mx-0">
-                Fresh onigiri, ready in seconds — wherever you are. Skip the line, not the nutrition.
+                Fresh onigiri hubs that move based on LA demand. Catch us at the beach, the stadium, or your morning commute.
             </p>
             <div class="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
                 <a href="#locations" class="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-red-700 transition-all active:scale-95">
-                    Find a Machine <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    Track Active Hubs <i data-lucide="navigation" class="w-5 h-5"></i>
                 </a>
-                <div class="flex items-center gap-2 text-slate-500 text-sm font-medium">
-                    <div class="flex -space-x-2">
-                        <div class="w-8 h-8 rounded-full border-2 border-white bg-slate-200 flex items-center justify-center text-[10px]">🍱</div>
-                        <div class="w-8 h-8 rounded-full border-2 border-white bg-slate-200 flex items-center justify-center text-[10px]">🍙</div>
-                        <div class="w-8 h-8 rounded-full border-2 border-white bg-slate-200 flex items-center justify-center text-[10px]">🥢</div>
-                    </div>
-                    <span>500+ daily commuters</span>
-                </div>
             </div>
         </div>
         <div class="flex-1 w-full fade-in">
             <div class="hero-image-container relative rounded-3xl overflow-hidden aspect-square bg-slate-100 border border-slate-200 shadow-2xl">
-                <!-- Image source matching your GitHub exactly -->
-                <img src="THE%20ULTIMATE%20MEAL%20ON%20THE%20GO%20(1).png" 
-                     alt="The Ultimate Meal On The Go" 
+                <img src="THE ULTIMATE MEAL ON THE GO (1).jpg" 
+                     alt="Oni Mobile Hub Poster" 
                      class="w-full h-full object-cover"
-                     onerror="this.src='https://images.unsplash.com/photo-1615362868051-1cb34898396e?auto=format&fit=crop&q=80&w=1000'">
+                     onerror="this.src='https://images.unsplash.com/photo-1540324155974-7523202daa3f?auto=format&fit=crop&q=80&w=1000'">
                 
                 <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
                 <div class="absolute bottom-6 left-6 right-6">
                     <div class="bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-xl">
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white font-bold italic">O</div>
+                            <div class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white font-bold italic">H</div>
                             <div>
-                                <p class="text-xs font-bold text-red-600 uppercase">Featured Machine</p>
-                                <p class="text-sm font-bold">Central Hub - Station Entrance</p>
+                                <p class="text-xs font-bold text-red-600 uppercase">Hub Status: Active</p>
+                                <p class="text-sm font-bold">Currently in Santa Monica</p>
                             </div>
                         </div>
                     </div>
@@ -92,81 +82,155 @@
         </div>
     </header>
 
-    <!-- Menu Section (New Tab) -->
+    <!-- Menu Section -->
     <section id="menu" class="py-24 px-6 max-w-6xl mx-auto scroll-mt-20">
         <div class="text-center mb-16 fade-in">
-            <h2 class="text-4xl font-black mb-4">Our Classics</h2>
-            <p class="text-slate-500">Freshly made every 24 hours. No preservatives, just flavor.</p>
+            <h2 class="text-4xl font-black mb-4">The Essentials</h2>
+            <p class="text-slate-500 font-medium italic">Hand-crafted. Simple. $5 Every Day.</p>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm text-center fade-in">
-                <div class="text-4xl mb-4">🍣</div>
-                <h4 class="font-bold">Spicy Tuna</h4>
-                <p class="text-xs text-slate-500 mt-2">Bestseller</p>
+        
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Spicy Tuna Mayo -->
+            <div class="bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-shadow fade-in">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="Tuna-Mayo-Onigiri-1472-I-1.jpg" alt="Spicy Tuna Mayo Onigiri" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+                    <div class="absolute top-4 right-4 bg-red-600 text-white font-black px-4 py-2 rounded-full text-xl shadow-lg">$5</div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-black mb-2">Spicy Tuna Mayo</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed text-sm">Premium skipjack tuna mixed with sriracha-infused kewpie mayo and wrapped in crisp nori.</p>
+                    
+                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-100">
+                        <h4 class="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3">Nutritional Profile</h4>
+                        <div class="grid grid-cols-3 gap-2 text-center">
+                            <div class="border-r border-slate-200">
+                                <p class="text-lg font-black text-slate-900">195</p>
+                                <p class="text-[9px] uppercase font-bold text-slate-500">Calories</p>
+                            </div>
+                            <div class="border-r border-slate-200">
+                                <p class="text-lg font-black text-slate-900">8g</p>
+                                <p class="text-[9px] uppercase font-bold text-slate-500">Protein</p>
+                            </div>
+                            <div>
+                                <p class="text-lg font-black text-slate-900">32g</p>
+                                <p class="text-[9px] uppercase font-bold text-slate-500">Carbs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm text-center fade-in" style="transition-delay: 0.1s">
-                <div class="text-4xl mb-4">🐟</div>
-                <h4 class="font-bold">Grilled Salmon</h4>
-                <p class="text-xs text-slate-500 mt-2">High Protein</p>
-            </div>
-            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm text-center fade-in" style="transition-delay: 0.2s">
-                <div class="text-4xl mb-4">🍗</div>
-                <h4 class="font-bold">Chicken Teriyaki</h4>
-                <p class="text-xs text-slate-500 mt-2">Kid's Choice</p>
-            </div>
-            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm text-center fade-in" style="transition-delay: 0.3s">
-                <div class="text-4xl mb-4">🥬</div>
-                <h4 class="font-bold">Pickled Plum</h4>
-                <p class="text-xs text-slate-500 mt-2">Vegan</p>
+
+            <!-- Chicken Teriyaki -->
+            <div class="bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-shadow fade-in" style="transition-delay: 0.1s">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="soboro-chicken-onigiri-thumbnail.jpg" alt="Chicken Teriyaki Onigiri" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+                    <div class="absolute top-4 right-4 bg-red-600 text-white font-black px-4 py-2 rounded-full text-xl shadow-lg">$5</div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-black mb-2">Chicken Teriyaki</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed text-sm">Tender flame-grilled chicken glazed in house-made teriyaki sauce with a hint of ginger.</p>
+                    
+                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-100">
+                        <h4 class="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3">Nutritional Profile</h4>
+                        <div class="grid grid-cols-3 gap-2 text-center">
+                            <div class="border-r border-slate-200">
+                                <p class="text-lg font-black text-slate-900">210</p>
+                                <p class="text-[9px] uppercase font-bold text-slate-500">Calories</p>
+                            </div>
+                            <div class="border-r border-slate-200">
+                                <p class="text-lg font-black text-slate-900">10g</p>
+                                <p class="text-[9px] uppercase font-bold text-slate-500">Protein</p>
+                            </div>
+                            <div>
+                                <p class="text-lg font-black text-slate-900">35g</p>
+                                <p class="text-[9px] uppercase font-bold text-slate-500">Carbs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section (New Tab) -->
+    <!-- About Section / Mobile Hub Concept -->
     <section id="about" class="py-24 px-6 bg-white scroll-mt-20">
         <div class="max-w-4xl mx-auto text-center fade-in">
-            <span class="bg-red-50 text-red-600 px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase">Our Story</span>
-            <h2 class="text-4xl font-black mt-6 mb-8 italic">"Vending machines shouldn't mean compromise."</h2>
-            <p class="text-lg text-slate-600 leading-relaxed">
-                Oni was founded by a team of busy commuters who were tired of choosing between a 30-minute line or a bag of chips. We combined traditional Japanese recipes with modern automated logistics to bring you real, nutritious meals in under a minute.
+            <span class="bg-red-50 text-red-600 px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase">The Hybrid Model</span>
+            <h2 class="text-4xl font-black mt-6 mb-8 italic">"We go where the city flows."</h2>
+            <p class="text-lg text-slate-600 leading-relaxed mb-12">
+                Static machines stay in one place. Oni Hubs move. Using real-time LA demand data, our mobile units deploy to high-traffic areas exactly when you need them. Whether it's a concert at SoFi or a busy Friday in DTLA, Oni is already there.
             </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6">
+                    <div class="flex justify-center text-red-600 mb-4"><i data-lucide="zap" class="w-8 h-8"></i></div>
+                    <h4 class="font-bold mb-2">Instant Service</h4>
+                    <p class="text-sm text-slate-500">Scan, grab, and go in under 30 seconds.</p>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-center text-red-600 mb-4"><i data-lucide="trending-up" class="w-8 h-8"></i></div>
+                    <h4 class="font-bold mb-2">Demand-Driven</h4>
+                    <p class="text-sm text-slate-500">Our hubs move to where the hunger is.</p>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-center text-red-600 mb-4"><i data-lucide="map" class="w-8 h-8"></i></div>
+                    <h4 class="font-bold mb-2">Live Tracking</h4>
+                    <p class="text-sm text-slate-500">Always know the exact location of the nearest hub.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Locations Section -->
+    <!-- Live Locations Section -->
     <section id="locations" class="bg-slate-900 text-white py-24 px-6 scroll-mt-20">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
             <div class="flex-1 fade-in">
-                <h2 class="text-4xl md:text-6xl font-black mb-6">On your route.</h2>
-                <p class="text-slate-400 text-lg mb-8">Strategically placed in Tokyo, London, and NYC's busiest transit hubs.</p>
+                <h2 class="text-4xl md:text-6xl font-black mb-6">Live Hub Map.</h2>
+                <p class="text-slate-400 text-lg mb-8">Oni Hubs are currently deployed at these high-demand LA zones.</p>
                 <div class="space-y-4">
                     <div class="p-4 bg-slate-800/50 rounded-2xl flex justify-between items-center border border-slate-700">
-                        <span>Central Station - Platform 4</span>
-                        <span class="text-red-400 font-bold">0.1 mi</span>
+                        <div>
+                            <p class="font-bold">Hub Alpha - Santa Monica</p>
+                            <p class="text-xs text-slate-400">Near the Pier / Ocean Ave</p>
+                        </div>
+                        <span class="text-red-400 font-bold">Deploying Now</span>
                     </div>
                     <div class="p-4 bg-slate-800/50 rounded-2xl flex justify-between items-center border border-slate-700">
-                        <span>Metro North - Exit A</span>
-                        <span class="text-red-400 font-bold">0.4 mi</span>
+                        <div>
+                            <p class="font-bold">Hub Beta - DTLA</p>
+                            <p class="text-xs text-slate-400">7th & Flower Metro Center</p>
+                        </div>
+                        <span class="text-red-400 font-bold">Active</span>
+                    </div>
+                    <div class="p-4 bg-slate-800/50 rounded-2xl flex justify-between items-center border border-slate-700">
+                        <div>
+                            <p class="font-bold">Hub Gamma - Westwood</p>
+                            <p class="text-xs text-slate-400">Outside UCLA Ackerman Union</p>
+                        </div>
+                        <span class="text-red-400 font-bold">Active</span>
                     </div>
                 </div>
+                <p class="mt-6 text-xs text-slate-500 italic">*Hubs relocate every 4-6 hours based on local demand.</p>
             </div>
             <div class="flex-1 w-full fade-in">
-                <div class="rounded-3xl overflow-hidden aspect-video bg-slate-800 border border-slate-700 flex items-center justify-center">
-                    <p class="text-slate-500 text-sm flex items-center gap-2"><i data-lucide="map"></i> Map Loading...</p>
+                <div class="rounded-3xl overflow-hidden aspect-square bg-slate-800 border border-slate-700 flex flex-col items-center justify-center p-8 text-center relative">
+                    <div class="absolute inset-0 bg-red-600/5 animate-pulse"></div>
+                    <i data-lucide="navigation" class="w-12 h-12 text-red-500 mb-4 animate-bounce"></i>
+                    <p class="text-slate-300 font-bold text-xl">Oni Live Radar</p>
+                    <p class="text-slate-500 text-sm mt-2">Connecting to GPS... Tracking 3 Active Units</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section (New Tab) -->
+    <!-- Contact Section -->
     <section id="contact" class="py-24 px-6 max-w-6xl mx-auto scroll-mt-20">
         <div class="bg-red-600 rounded-[3rem] p-12 text-white flex flex-col md:flex-row justify-between items-center gap-8 fade-in">
             <div class="text-center md:text-left">
-                <h2 class="text-4xl font-black mb-2">Want Oni in your office?</h2>
-                <p class="text-red-100">Drop us a line and we'll see if we can install a machine near you.</p>
+                <h2 class="text-4xl font-black mb-2">Request a Hub?</h2>
+                <p class="text-red-100">Hosting an event or have a high-demand spot in LA? Tell us where to move next.</p>
             </div>
-            <a href="mailto:hello@oni.com" class="bg-white text-red-600 px-8 py-4 rounded-full font-black hover:bg-slate-100 transition-all">
-                Contact Us
+            <a href="mailto:hubs@oni.com" class="bg-white text-red-600 px-8 py-4 rounded-full font-black hover:bg-slate-100 transition-all">
+                Submit Demand
             </a>
         </div>
     </section>
@@ -176,7 +240,7 @@
         <div class="text-xl font-black tracking-tighter text-slate-900 mb-6">
             ONI<span class="text-red-600">.</span>
         </div>
-        <p class="text-slate-400 text-xs uppercase tracking-widest font-bold">© 2024 Oni Foods Corp. Fueling the Hustle.</p>
+        <p class="text-slate-400 text-xs uppercase tracking-widest font-bold">© 2024 Oni Foods LA. Demand-Driven Nutrition.</p>
     </footer>
 
     <script>
